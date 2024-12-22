@@ -47,16 +47,16 @@ const Auth = () => {
   };
 
   return (
-    <div className="login-gradient  px-4">
+    <div className="login-gradient">
       <div className="grid md:grid-cols-2 gap-4 bg-login-gradient shadow-lg rounded-lg overflow-hidden w-full">
         <div className="hidden md:block">
           <Image src={login} className="object-cover h-full" alt="login-image" />
         </div>
 
-        <div className="flex flex-col justify-start items-center px-8 py-12 space-y-6">
+        <div className="flex flex-col justify-start items-center px-3 lg:px-8 py-44 lg:py-12 space-y-6">
           <Image
             src={logo}
-            className="ring-2 ring-white rounded p-2 w-16 h-16"
+            className="ring-2 ring-white rounded-lg p-2 w-16 h-16"
             alt="logo"
           />
           <h1 className="text-white font-poppins font-bold text-3xl md:text-4xl">
@@ -68,9 +68,9 @@ const Auth = () => {
 
           {/* Form */}
           <form
-            onSubmit={handleSubmit}
-            className="w-full max-w-sm space-y-4 ring-2 ring-gray-500 rounded-xl shadow-lg p-4 bg-white"
-          >
+        onSubmit={handleSubmit}
+        className="w-full max-w-xs sm:max-w-sm space-y-3 sm:space-y-4 ring-2 ring-gray-500 rounded-xl shadow-lg p-4 bg-white"
+      >
             {isSignUp ? (
               <>
                 <div>
@@ -87,7 +87,7 @@ const Auth = () => {
                     placeholder="Username"
                     value={formData.username}
                     onChange={handleChange}
-                    className="w-full px-4 py-2 rounded bg-gray-100 focus:outline-none focus:ring focus:ring-blue-500"
+                    className="w-full lg:px-4 py-2 rounded bg-gray-100 focus:outline-none focus:ring focus:ring-blue-500"
                   />
                 </div>
                 <div>
@@ -184,7 +184,7 @@ const Auth = () => {
                         value={digit}
                         onChange={handleChange}
                         maxLength="1"
-                        className="w-12 h-12 text-center text-lg bg-gray-100 rounded focus:outline-none focus:ring focus:ring-blue-500"
+                        className="w-8 h-10 lg:w-12 lg:h-12 text-center text-lg bg-gray-100 rounded focus:outline-none focus:ring focus:ring-blue-500"
                       />
                     ))}
                   </div>
