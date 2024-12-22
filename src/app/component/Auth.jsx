@@ -4,6 +4,7 @@ import Image from "next/image";
 import login from "../assests/login.jpg";
 import logo from "../assests/logo.png";
 import { IoMdMail } from "react-icons/io";
+import { FaUserCircle } from "react-icons/fa";
 
 
 const Auth = () => {
@@ -78,7 +79,7 @@ const Auth = () => {
                     htmlFor="username"
                     className="block text-gray-700 font-medium"
                   >
-                    Username
+                    Username 
                   </label>
                   <input
                     id="username"
@@ -91,8 +92,8 @@ const Auth = () => {
                   />
                 </div>
                 <div>
-                  <label htmlFor="email" className="block flex text-gray-700 font-medium">
-                    Email <IoMdMail className=""/>
+                  <label htmlFor="email" className="block text-gray-700 font-medium">
+                    Email
                   </label>
                   <input
                     id="email"
